@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: stockExchange.stockExchangeJPA.Gamer.Impl.Test.GamerImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.431 sec - in stockExchange.stockExchangeJPA.Gamer.Impl.Test.GamerImplTest
