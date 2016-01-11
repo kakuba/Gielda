@@ -45,6 +45,7 @@ public class StockRepositoryImpl implements StockRepository {
 		
 		List<StockEntity> stocksList = query.getResultList();
 		logger.info("StockEntityLst created successfully.");
+		entityTransaction.commit();
 		
 		logger.info("Closeing EntityManager...");
 		entityManager.close();
@@ -77,6 +78,7 @@ public class StockRepositoryImpl implements StockRepository {
 		Query queryEndDate = entityManager.createQuery(mySQLqueryEndDate);
 		beginAndEndDate.add((Date)queryEndDate.getSingleResult());
 		
+		entityTransaction.commit();
 		
 		entityManager.close();
 		entityManagerFactory.close();
@@ -100,6 +102,8 @@ public class StockRepositoryImpl implements StockRepository {
 				+ "AND stock.date = DATE('" + currentDate + "')";
 		Query query = entityManager.createQuery(mySQLquery);
 		value = (Float)query.getSingleResult();
+		
+		entityTransaction.commit();
 		
 		entityManager.close();
 		entityManagerFactory.close();

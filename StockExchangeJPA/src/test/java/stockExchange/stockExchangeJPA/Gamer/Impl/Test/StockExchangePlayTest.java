@@ -35,13 +35,14 @@ public class StockExchangePlayTest {
 		
 		loader.loadFileToDataBase(dataBaseName, filesPath);
 	}
-//	@After
-//	public void reloadFile() throws ClassNotFoundException, SQLException, IOException{
-//		String filesPath = "C:\\Users\\JWOLAN\\Desktop\\testData.csv";
-//		String dataBaseName = "STOCKEXCHANGE";
-//		
-//		loader.loadFileToDataBase(dataBaseName, filesPath);
-//	}
+	@Ignore
+	@After
+	public void reloadFile() throws ClassNotFoundException, SQLException, IOException{
+		String filesPath = "C:\\Users\\JWOLAN\\Desktop\\testData.csv";
+		String dataBaseName = "STOCKEXCHANGE";
+		
+		loader.loadFileToDataBase(dataBaseName, filesPath);
+	}
 	@Ignore
 	@Test
 	public void test() {

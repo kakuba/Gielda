@@ -21,7 +21,7 @@ public class LoaderImplTest {
 	@Autowired
 	LoaderImpl loaderImpl;
 	
-	@Ignore
+//	@Ignore
 	@Test
 	public void testShouldCreateDatabase() throws ClassNotFoundException, SQLException, IOException {
 		//given
